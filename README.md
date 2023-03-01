@@ -1,8 +1,9 @@
-# 🚀 Welcome to your new awesome project!
+Верстка Макета в учебных целях: Магазин часов Conquest
 
-This project has been created using **webpack-cli**, you can now run
+<img src="./readme-source/screenshot1.png" width="400">
 
-```
+
+
 npm run build
 ```
 
