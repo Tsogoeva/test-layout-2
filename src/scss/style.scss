@@ -1,0 +1,736 @@
+// Обнуляющие стили
+@import "./reset.scss";
+
+// Шрифты
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+// Палитра
+$main-background: #fdfdfb;
+$beige: #e6c8b4;
+
+body {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.header {
+			width: 100%;
+			min-height: 85px;
+			background-color: #fdfdfb;
+
+			.header__container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+
+				max-width: 1170px;
+				min-height: 85px;
+				margin: 0 auto;
+
+				.header__logo {
+					display: flex;
+					.logo__brand {
+						margin: 0 0 0 3px;
+					}
+					.logo__name {
+						font-family: "Playfair Display", serif;
+						font-size: 12px;
+						line-height: 16px;
+						letter-spacing: 0.14em;
+						text-transform: uppercase;
+
+						margin: 2px 0 0 3px;
+
+						color: #555248;
+					}
+				}
+
+				.header__menu {
+					.menu__container {
+						display: flex;
+						justify-content: center;
+						flex-wrap: wrap;
+						flex: 0 1 25%;
+
+						margin: 0 -32.5px;
+
+						.menu__item {
+							line-height: 16px;
+							color: #555248;
+
+							padding: 0 32.5px;
+						}
+					}
+				}
+
+				.header__icons {
+					.icons__container {
+						display: flex;
+						justify-content: space-around;
+						flex-wrap: wrap;
+						flex: 0 1 33.3%;
+						margin: 0 -12px;
+
+						.icon {
+							padding: 0 12px;
+							color: #1b1a17;
+
+							// .count {
+							// 	background-color: $beige;
+							// 	border-radius: 50%;
+							// }
+						}
+					}
+				}
+			}
+		}
+
+		.first_screen {
+			width: 100%;
+			max-height: 768;
+			background-color: #fdfdfb;
+
+			.first_screen__background {
+				max-height: 768px;
+				max-width: 1170px;
+				background: url("../images/first-screen/background-first-screen.svg") 54% / auto 100% no-repeat;
+
+				margin: 0 auto;
+			}
+
+			.first_screen__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				min-height: 768px;
+
+				.first_screen__line {
+					width: 50px;
+					border-top: 1px solid #8b8371;
+					margin-bottom: 255px;
+				}
+				.first_screen__info {
+					margin: 0 0 0 15px;
+
+					.info__title {
+						font-family: "Playfair Display", serif;
+						font-size: 45px;
+						line-height: 60px;
+
+						color: #1b1a17;
+						margin: 0 3px 16px 3px;
+					}
+					.info__subtitle {
+						font-family: "Playfair Display", serif;
+						font-size: 30px;
+						line-height: 40px;
+
+						color: #1b1a17;
+						margin: 0 3px 39px 3px;
+					}
+					.info__description {
+						font-weight: 300;
+						line-height: 21px;
+						width: 58%;
+
+						color: rgba(27, 26, 23, 0.82);
+						margin: 0 3px 64px 3px;
+					}
+					.info__button {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						background-color: #444240;
+						max-width: 205px;
+						min-height: 64px;
+
+						button {
+							font-weight: 500;
+							font-size: 12px;
+							line-height: 14px;
+							letter-spacing: 0.05em;
+							text-transform: uppercase;
+
+							color: #ffffff;
+							background-color: #444240;
+						}
+					}
+				}
+				.first_screen__main_watch {
+					display: flex;
+					justify-content: center;
+
+					.main_watch__price {
+						width: 140px;
+
+						.price__count {
+							position: relative;
+							top: 138px;
+							right: 30px;
+
+							font-family: "Prata", serif;
+							font-size: 16px;
+							line-height: 22px;
+
+							color: #1b1a17;
+						}
+						.price__currency {
+							display: inline;
+							position: relative;
+							top: 141px;
+							right: 26px;
+						}
+						.price__line {
+							display: inline-block;
+							position: relative;
+							top: 133px;
+							right: 15px;
+
+							width: 50px;
+							border-top: 1px solid #8b8371;
+						}
+					}
+					.main_watch__rado {
+						position: relative;
+
+						right: 94px;
+						bottom: 9px;
+					}
+
+					.main_watch__diameter {
+						position: relative;
+						margin-bottom: 116px;
+
+						.diameter__line {
+							display: inline-block;
+							position: absolute;
+							top: 657px;
+							right: 150px;
+
+							width: 50px;
+							border-top: 1px solid #8b8371;
+						}
+						.diameter__data {
+							position: absolute;
+							top: 647px;
+							right: 15px;
+
+							font-family: "Prata", serif;
+							font-size: 16px;
+							line-height: 22px;
+							white-space: nowrap;
+
+							color: #1b1a17;
+						}
+					}
+				}
+			}
+		}
+
+		.second_screen {
+			width: 100%;
+			max-height: 634px;
+			background-color: #fdfdfb;
+
+			.second_screen__content {
+				max-width: 1170px;
+				max-height: 634px;
+				margin: 0 auto;
+
+				.second_screen__container {
+					display: flex;
+					flex-direction: column;
+
+					min-height: 634px;
+					margin-top: 79px;
+
+					.second_screen__title {
+						font-family: "Playfair Display", serif;
+						font-size: 32px;
+						line-height: 43px;
+						text-align: center;
+
+						color: #1b1a17;
+					}
+					.second_screen__watch_all {
+						font-family: "Roboto", sans-serif;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 19px;
+						text-align: right;
+
+						color: #444240;
+					}
+					.second_screen__line {
+						height: 1px;
+						width: 101px;
+
+						align-self: flex-end;
+						margin-top: 11px;
+					}
+					.second_screen__goods {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						min-width: 1170px;
+						min-height: 467px;
+
+						.good__1 {
+							.good__name {
+								font-family: "Playfair Display", serif;
+								font-weight: 700;
+								line-height: 24px;
+								letter-spacing: 0.03em;
+								text-transform: uppercase;
+
+								color: rgba(27, 26, 23, 0.82);
+							}
+							.good__price {
+								.price__coint {
+									font-family: "Prata", serif;
+									font-weight: 400;
+									font-size: 12px;
+									line-height: 16px;
+
+									color: rgba(27, 26, 23, 0.82);
+								}
+								img {
+									margin: 2px 0 0 2px;
+								}
+							}
+							.good__picture {
+								max-width: 313px;
+								max-height: 313px;
+
+								background: url("../images/second-screen/ellipse.svg") center no-repeat;
+							}
+							.good__more {
+								margin-top: 20px;
+
+								.more__line {
+									padding: 0 -9px;
+									margin-top: 10px;
+								}
+								.more__text {
+									font-family: "Playfair Display", serif;
+									font-size: 16px;
+									line-height: 21px;
+
+									color: #1b1a17;
+									margin: 0 9px;
+								}
+							}
+						}
+						.good__2 {
+							.good__name {
+								font-family: "Playfair Display", serif;
+								font-weight: 700;
+								line-height: 24px;
+								letter-spacing: 0.03em;
+								text-transform: uppercase;
+
+								color: rgba(27, 26, 23, 0.82);
+							}
+							.good__price {
+								.price__coint {
+									font-family: "Prata", serif;
+									font-weight: 400;
+									font-size: 12px;
+									line-height: 16px;
+
+									color: rgba(27, 26, 23, 0.82);
+								}
+								img {
+									margin: 2px 0 0 2px;
+								}
+							}
+							.good__picture {
+								max-width: 313px;
+								max-height: 313px;
+
+								background: url("../images/second-screen/ellipse.svg") center no-repeat;
+							}
+							.good__more {
+								margin-top: 20px;
+
+								.more__line {
+									padding: 0 -9px;
+									margin-top: 10px;
+								}
+								.more__text {
+									font-family: "Playfair Display", serif;
+									font-size: 16px;
+									line-height: 21px;
+
+									color: #1b1a17;
+									margin: 0 9px;
+								}
+							}
+						}
+						.good__3 {
+							.good__name {
+								font-family: "Playfair Display", serif;
+								font-weight: 700;
+								line-height: 24px;
+								letter-spacing: 0.03em;
+								text-transform: uppercase;
+
+								color: rgba(27, 26, 23, 0.82);
+							}
+							.good__price {
+								.price__coint {
+									font-family: "Prata", serif;
+									font-weight: 400;
+									font-size: 12px;
+									line-height: 16px;
+
+									color: rgba(27, 26, 23, 0.82);
+								}
+								img {
+									margin: 2px 0 0 2px;
+								}
+							}
+							.good__picture {
+								max-width: 313px;
+								max-height: 313px;
+
+								background: url("../images/second-screen/ellipse.svg") center no-repeat;
+							}
+							.good__more {
+								margin-top: 20px;
+
+								.more__line {
+									padding: 0 -9px;
+									margin-top: 10px;
+								}
+								.more__text {
+									font-family: "Playfair Display", serif;
+									font-size: 16px;
+									line-height: 21px;
+
+									color: #1b1a17;
+									margin: 0 9px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.indent {
+			width: 100%;
+			height: 86px;
+		}
+
+		.third_screen {
+			position: relative;
+			width: 100%;
+			max-height: 519px;
+			background-color: #fdfdfb;
+
+			overflow: hidden;
+
+			.third_screen__background {
+				position: relative;
+				max-width: 468px;
+				height: 519px;
+				background-color: #f7f5ef;
+			}
+
+			.third_screen__container {
+				position: relative;
+				z-index: 2;
+				bottom: 468px;
+
+				display: flex;
+				justify-content: center;
+
+				margin: 0 auto;
+				max-width: 1170px;
+
+				.third_screen__picture {
+					position: relative;
+					padding-right: -35px;
+					.picture {
+					}
+					.picture__pagination {
+						position: absolute;
+						bottom: -40px;
+						right: 60px;
+
+						.pagination__open {
+						}
+						.pagination__count {
+							font-family: "Prata";
+							font-size: 12px;
+							line-height: 16px;
+
+							color: rgba(27, 26, 23, 0.82);
+							margin: 0 20px;
+						}
+						.pagination__close {
+						}
+					}
+				}
+				.third_screen__info {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					max-width: 480px;
+
+					margin-left: 35px;
+					padding-left: 35px;
+
+					.info__title {
+						font-family: "Playfair Display", serif;
+						font-size: 32px;
+						line-height: 43px;
+
+						color: #1b1a17;
+
+						margin-bottom: 38px;
+					}
+					.info__description {
+						width: 90%;
+						font-size: 16px;
+						line-height: 150%;
+
+						color: #444240;
+						margin-bottom: 45px;
+					}
+					.info__button {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						background: #d4b098;
+						width: 205px;
+						height: 64px;
+
+						button {
+							font-weight: 500;
+							font-size: 12px;
+							line-height: 14px;
+							letter-spacing: 0.05em;
+							text-transform: uppercase;
+
+							background: #d4b098;
+							color: #ffffff;
+						}
+					}
+				}
+			}
+			.third_screen__backgrount_circle1 {
+				position: absolute;
+				bottom: 320px;
+				left: 1120px;
+
+				width: 365px;
+				height: 365px;
+				border: 1px solid #d4b098;
+				border-radius: 50%;
+			}
+			.third_screen__backgrount_circle2 {
+				position: absolute;
+				top: -10px;
+				left: 1180px;
+
+				width: 745px;
+				height: 745px;
+				border: 1px solid #d4b098;
+				border-radius: 50%;
+			}
+		}
+
+		.fourth_screen {
+			width: 100%;
+			min-height: 631px;
+
+			background-color: #ffffff;
+
+			.fourth_screen__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				max-width: 1170px;
+				min-height: 460px;
+
+				margin: 81px auto 0;
+
+				.fourth_screen__info {
+					.info__title {
+						font-family: "Playfair Display", serif;
+						font-size: 32px;
+						line-height: 43px;
+
+						color: #1b1a17;
+						margin: 0 3px 40px;
+					}
+					.info__description {
+						font-size: 16px;
+						line-height: 27px;
+						width: 73%;
+
+						color: #444240;
+						margin: 0 3px 118px;
+					}
+					.info__social_media {
+						.social_media__container {
+							display: flex;
+							justify-content: space-between;
+
+							max-width: 93px;
+							.social_media__icon {
+							}
+						}
+					}
+				}
+				.fourth_screen__pictures {
+					display: flex;
+					justify-content: space-between;
+
+					width: 629px;
+					height: 460px;
+					.pictures__first_column {
+						margin: 0 10px;
+
+						.first_column__1 {
+							margin-bottom: 10px;
+						}
+						.first_column__2 {
+						}
+					}
+					.pictures__second_column {
+						.second_column_1 {
+						}
+					}
+				}
+			}
+		}
+
+		.footer {
+			width: 100%;
+			min-height: 275px;
+			background-color: rgba(68, 66, 64, 1);
+
+			.footer__container {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				max-width: 1170px;
+				min-height: 275px;
+				margin: 0 auto;
+
+				.footer__contacts {
+					margin-bottom: 60px;
+
+					.contacts__logo {
+						display: flex;
+						margin: 0 0 32px 0;
+
+						.logo__brand_footer {
+							margin: 0 0 0 3px;
+						}
+						.logo__name_footer {
+							font-family: "Playfair Display", serif;
+							font-weight: 700;
+							font-size: 14px;
+							line-height: 19px;
+							letter-spacing: 0.14em;
+							text-transform: uppercase;
+
+							color: #ffffff;
+							margin: 3px 0 0 3px;
+						}
+					}
+
+					.contacts__item_list {
+						margin-left: 5px;
+						.contacts__item {
+							font-size: 12px;
+							line-height: 14px;
+
+							color: rgba(255, 255, 255, 0.75);
+							margin-bottom: 15px;
+						}
+					}
+				}
+
+				.footer__about_company {
+					.about_company__title {
+						font-weight: 700;
+						line-height: 16px;
+						letter-spacing: 0.07em;
+						text-transform: uppercase;
+
+						color: #ffffff;
+						margin-bottom: 33px;
+					}
+					.about_company__item_list {
+						.about_company__item {
+							font-size: 12px;
+							line-height: 14px;
+
+							color: rgba(255, 255, 255, 0.75);
+							margin-bottom: 15px;
+						}
+					}
+				}
+
+				.footer__for_customers {
+					.for_customers__title {
+						font-weight: 700;
+						line-height: 16px;
+						letter-spacing: 0.07em;
+						text-transform: uppercase;
+
+						color: #ffffff;
+						margin-bottom: 33px;
+					}
+					.for_customers__item_list {
+						.for_customers__item {
+							font-size: 12px;
+							line-height: 14px;
+
+							color: rgba(255, 255, 255, 0.75);
+							margin-bottom: 15px;
+						}
+					}
+				}
+
+				.footer__payment_and_delivery {
+					.payment_and_delivery__title {
+						font-weight: 700;
+						line-height: 16px;
+						letter-spacing: 0.07em;
+						text-transform: uppercase;
+
+						color: #ffffff;
+						margin-bottom: 33px;
+					}
+					.payment_and_delivery__item_list {
+						.payment_and_delivery__item {
+							font-size: 12px;
+							line-height: 14px;
+
+							color: rgba(255, 255, 255, 0.75);
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
