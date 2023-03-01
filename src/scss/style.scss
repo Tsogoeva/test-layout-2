@@ -6,10 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
-// Палитра
-$main-background: #fdfdfb;
-$beige: #e6c8b4;
-
 body {
 	background-color: #ffffff;
 	font-family: "Roboto", sans-serif;
@@ -78,13 +74,29 @@ body {
 						margin: 0 -12px;
 
 						.icon {
+							position: relative;
 							padding: 0 12px;
 							color: #1b1a17;
 
-							// .count {
-							// 	background-color: $beige;
-							// 	border-radius: 50%;
-							// }
+							.count {
+								position: absolute;
+								z-index: 2;
+								bottom: 9px;
+								right: 5px;
+
+								width: 13px;
+								height: 13px;
+								background-color: #e6c8b4;
+								border-radius: 50%;
+
+								font-size: 8px;
+								line-height: 9px;
+								text-align: center;
+
+								color: #1b1a17;
+
+								padding-top: 2px;
+							}
 						}
 					}
 				}
@@ -435,27 +447,16 @@ body {
 		.third_screen {
 			position: relative;
 			width: 100%;
-			max-height: 519px;
-			background-color: #fdfdfb;
+			min-height: 519px;
+			background: linear-gradient(to right, #f7f5ef 40%, #fdfdfb 40% 20%);
 
 			overflow: hidden;
 
-			.third_screen__background {
-				position: relative;
-				max-width: 468px;
-				height: 519px;
-				background-color: #f7f5ef;
-			}
-
 			.third_screen__container {
-				position: relative;
-				z-index: 2;
-				bottom: 468px;
-
 				display: flex;
 				justify-content: center;
 
-				margin: 0 auto;
+				margin: 40px auto;
 				max-width: 1170px;
 
 				.third_screen__picture {
