@@ -1,10 +1,16 @@
 {
   "name": "test-layout-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "My webpack project",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve",
+    "dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/Tsogoeva/test-layout-2/issues"
   },
-  "homepage": "https://github.com/Tsogoeva/test-layout-2#readme"
+  "homepage": "https://github.com/Tsogoeva/test-layout-2#readme",
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.1",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
