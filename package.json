@@ -1,0 +1,19 @@
+{
+  "name": "test-layout-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsogoeva/test-layout-2.git"
+  },
+  "author": "TsogoevaTS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tsogoeva/test-layout-2/issues"
+  },
+  "homepage": "https://github.com/Tsogoeva/test-layout-2#readme"
+}
